@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ 	<TextView android:id="@+id/tv_empty"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="match_parent"
+ 	    android:textSize="36dp"
+ 	    android:text="@string/string_empty_name"
+ 	    android:gravity="center"
+ 	    android:visibility="gone" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lst_recomandation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="8dp" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+   <Button
+        android:id="@+id/btn_recommand"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/ic_btn_recommand"
+        android:focusable="true"
+        android:clickable="true"
+        android:focusableInTouchMode="true" />
+</FrameLayout>

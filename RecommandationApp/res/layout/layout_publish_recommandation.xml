@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/tv_entity"
+        style="@style/publish_tv_style"
+		android:textSize="24dp"
+        android:hint="@string/string_entity"
+        android:singleLine="true" />
+
+    <AutoCompleteTextView
+        android:id="@+id/tv_category"
+        style="@style/publish_tv_style"
+        android:layout_marginTop="8dp"
+        android:hint="@string/string_category"
+        android:singleLine="true"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/tv_content"
+        style="@style/publish_tv_style"
+        android:layout_marginTop="18dp"
+        android:hint="@string/string_content"
+        android:singleLine="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cb_anonymous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/tv_anonymous" />
+
+        <TextView
+            android:id="@+id/tv_anonymous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cb_anonymous"
+            android:layout_alignBottom="@+id/cb_anonymous"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/string_anonymous"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_remain_chars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cb_anonymous"
+            android:layout_alignBottom="@+id/cb_anonymous"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="60"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="@color/BG_WHITE"
+    android:orientation="vertical"
+    android:paddingLeft="5dip"
+    android:paddingRight="10dip" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <View
+            android:id="@+id/divider_color"
+            android:layout_width="@dimen/color_divider_dimen"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/BG_BLUE" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/divider_color" >
+
+            <TextView
+                android:id="@+id/tv_category"
+                style="@style/homepage_title_category_style"
+                android:layout_marginLeft="10dp"
+                android:text="music" />
+
+            <!--
+                 <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_dimen"
+                android:layout_below="@id/tv_category"
+                android:layout_marginTop="5dp"
+                android:background="@color/recommandation_item_divider" />
+            -->
+
+            <TextView
+                android:id="@+id/tv_entity_name"
+                style="@style/homepage_title_style"
+                android:layout_below="@id/tv_category"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="heal the world" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_dimen"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/tv_category"
+        android:background="@color/recommandation_item_divider" />
+
+    <RelativeLayout
+        android:id="@+id/body_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider1"
+        android:layout_marginTop="12dp" >
+
+        <TextView
+            android:id="@+id/tv_rc_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:text="very good music!!"
+            android:textSize="14dp" >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/body_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rc_content"
+            android:layout_marginTop="12dp" >
+            <View
+		        android:layout_width="20dp"
+		        android:layout_centerVertical="true"
+		        android:layout_height="@dimen/divider_dimen"
+		        android:layout_toLeftOf="@+id/img_badge"
+		        android:background="@color/BG_BLACK" />
+            <ImageView
+                android:id="@+id/img_badge"
+                android:layout_width="@dimen/badge_size"
+                android:layout_height="@dimen/badge_size"
+                android:layout_toLeftOf="@+id/tv_username"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/user_icon" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                style="@style/badge_style"
+                android:layout_alignBaseline="@id/img_badge"
+                android:layout_marginLeft="9dp"
+                android:layout_alignParentRight="true"
+                android:text="felix.zhang" />
+
+            <TextView
+                android:id="@+id/tv_timestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:text="yesterday 11:22 pm"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/body_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/body_top"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="13dp"
+            android:gravity="right" >
+
+            <ImageView
+                android:id="@+id/img_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_like" />
+
+            <TextView
+                android:id="@+id/tv_praise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/img_praise"
+                android:text="10" />
+
+            <ImageView
+                android:id="@+id/img_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/tv_praise"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_comment" />
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/img_comment"
+                android:text="5" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

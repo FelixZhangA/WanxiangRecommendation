@@ -1,0 +1,29 @@
+<resources>
+
+    <string name="app_name">万象推荐</string>
+    <string name="string_register">注册</string>
+    <string name="string_login">登录</string>
+    <string name="string_copy_right">\@2014 WANXIANG All Right Reserved</string>
+    <string name="main_action_bar_name">万象</string>
+    <string name="string_category">品类</string>
+    <string name="string_entity">输入名称</string>
+    <string name="string_content">推荐理由</string>
+    <string name="string_anonymous">匿名推荐</string>
+    <string name="string_publish">推荐</string>
+    <string name="string_publish_recommandation">发表推荐</string>
+    <string name="error_publish_missing">请输入推荐物的名称或品类</string>
+    <string name="error_publish_exceed">内容超出字数限制</string>
+    <string name="error_publish_no_text">请输入评论内容</string>
+    
+    <string name="string_publishing">推荐发布中&#8230;&#8230;&#8230;</string>
+    <string name="scan_date_time_format_12hour_clock">d/M/yy aaa  h:mm </string>
+    <string name="scan_date_time_format_24hour_clock">d/M/yy   H:mm</string>
+    <string name="string_send">发送</string>
+    <string name="string_send_hint">回复  %s :</string>
+    <string name="string_comment_succ">评论成功</string>
+    <string name="string_comment_fail">评论失败</string>
+    
+    <string name="string_category_fragment_name">品类</string>
+    <string name="string_casual_fragment_name">随便逛逛</string>
+    <string name="string_empty_name">暂无推荐内容，去发布一个吧~</string>
+</resources>
